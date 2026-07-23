@@ -55,6 +55,29 @@ body {
   max-width: 1000px;
 }
 
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(129, 140, 248, 0.1);
+  border: 1px solid rgba(129, 140, 248, 0.2);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #818cf8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #818cf8;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #818cf8;
+}
+
 .main-title {
   font-size: clamp(3.5rem, 9vw, 7rem);
   font-weight: 900;
@@ -218,7 +241,6 @@ body {
   line-height: 1.6;
 }
 
-/* Contact Methods Grid */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -261,7 +283,6 @@ body {
   color: #818cf8;
 }
 
-/* Form Styles */
 .contact-form-panel {
   background-color: #12141a;
   border: 1px solid #1f2430;
@@ -316,7 +337,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Footprint Section (Market Directory) */
 .footprint-section {
   background-color: #12141a;
   border: 1px solid #1f2430;
