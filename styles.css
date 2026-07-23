@@ -47,7 +47,7 @@ body {
   color: #ffffff;
 }
 
-/* Homepage Carousel Styles */
+/* Homepage Carousel Styles & Overlays */
 .hero-carousel-section {
   padding: 4rem 0;
   overflow: hidden;
@@ -83,16 +83,24 @@ body {
   display: block;
 }
 
-@keyframes scrollHorizontal {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.carousel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(13, 15, 18, 0.9), transparent);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-/* About Page Specific Layouts */
+@keyframes scrollHorizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* About Page Styles */
 .about-page-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -147,7 +155,6 @@ body {
   align-items: center;
 }
 
-/* Reverses columns for zig-zag effect */
 .about-story-grid.reversed {
   grid-template-columns: 0.9fr 1.3fr;
 }
@@ -171,6 +178,8 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   max-width: 340px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-image-card-clean img {
@@ -178,6 +187,21 @@ body {
   border-radius: 8px;
   display: block;
   object-fit: cover;
+}
+
+.image-overlay-label {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  padding: 0.75rem 1rem;
+  background: rgba(13, 15, 18, 0.75);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .experience-highlights {
@@ -217,7 +241,7 @@ body {
   margin: 0;
 }
 
-/* Contact Page Scoped Styles */
+/* Contact Page Styles */
 .contact-page-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -230,7 +254,7 @@ body {
   gap: 3rem;
 }
 
-/* Footer */
+/* Footer & Icons */
 .footer-section {
   background-color: #13161c;
   border-top: 1px solid #232733;
@@ -276,9 +300,5 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-  
-  .headshot-wrapper {
-    max-width: 220px;
   }
 }
