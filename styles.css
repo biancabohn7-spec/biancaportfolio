@@ -7,8 +7,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f7f6f9;
-  color: #1a1a1a;
+  background-color: #0d0f12; /* Dark theme matching your aesthetic */
+  color: #e2e8f0;
   line-height: 1.6;
 }
 
@@ -18,15 +18,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eae5f2;
+  background-color: #13161c;
+  border-bottom: 1px solid #232733;
 }
 
 .logo {
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .nav-links {
@@ -36,27 +36,27 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #666;
+  color: #94a3b8;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 /* About Page Container */
 .about-page-container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
 
-/* Hero Split Section */
-.about-hero-split {
+/* Hero Balanced Section */
+.about-hero-balanced {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.4fr 0.8fr;
   gap: 3rem;
   align-items: center;
   margin-bottom: 4rem;
@@ -67,22 +67,29 @@ body {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #6c5ce7;
+  color: #a78bfa;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .about-hero-text h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  color: #1a1a1a;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: #ffffff;
 }
 
-.about-headshot-card img {
+/* Controlled, Smaller Headshot */
+.headshot-wrapper {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.headshot-wrapper img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   object-fit: cover;
+  display: block;
 }
 
 /* Editorial Story Section */
@@ -92,93 +99,89 @@ body {
 
 .about-story-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 4rem;
-  align-items: start;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
 }
 
 .about-text-content p {
   margin-bottom: 1.5rem;
-  color: #444;
-  font-size: 1.05rem;
+  color: #cbd5e1;
+  font-size: 1rem;
 }
 
 .story-lead {
   font-weight: 500;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
-.about-image-card {
-  background: #ffffff;
-  padding: 1rem;
+/* Clean Lifestyle Image Card (Text Removed, Proportionate Size) */
+.about-image-card-clean {
+  background: #13161c;
+  padding: 0.75rem;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #232733;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 340px;
+  margin: 0 auto;
 }
 
-.about-image-card img {
+.about-image-card-clean img {
   width: 100%;
   border-radius: 8px;
   display: block;
   object-fit: cover;
 }
 
-.image-caption {
-  padding-top: 1rem;
-  font-size: 0.9rem;
-  color: #666;
-  text-align: center;
-  font-style: italic;
-}
-
 /* Experience Highlights */
 .experience-highlights {
-  border-top: 1px solid #eae5f2;
+  border-top: 1px solid #232733;
   padding-top: 4rem;
 }
 
 .highlight-header h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .highlight-box {
-  background: #ffffff;
-  padding: 2rem;
+  background: #13161c;
+  padding: 1.75rem;
   border-radius: 10px;
-  border: 1px solid #eae5f2;
+  border: 1px solid #232733;
 }
 
 .highlight-title {
   display: block;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .highlight-desc {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 0.9rem;
+  color: #94a3b8;
   margin: 0;
 }
 
 /* Footer */
 .footer-section {
-  background-color: #ffffff;
-  border-top: 1px solid #eae5f2;
+  background-color: #13161c;
+  border-top: 1px solid #232733;
   padding: 3rem 0;
   margin-top: 5rem;
   text-align: center;
 }
 
 .footer-content {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -191,26 +194,30 @@ body {
 }
 
 .social-icon-btn {
-  color: #444;
+  color: #94a3b8;
   transition: color 0.2s ease;
   display: inline-flex;
 }
 
 .social-icon-btn:hover {
-  color: #6c5ce7;
+  color: #ffffff;
 }
 
 .copyright {
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 0.85rem;
+  color: #64748b;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .about-hero-split,
+  .about-hero-balanced,
   .about-story-grid,
   .highlights-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .headshot-wrapper {
+    max-width: 220px;
   }
 }
