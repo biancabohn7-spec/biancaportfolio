@@ -46,14 +46,13 @@ body {
   color: #ffffff;
 }
 
-/* About Page Container */
+/* About Page Specific Container & Layouts */
 .about-page-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
 
-/* Hero Balanced Section */
 .about-hero-balanced {
   display: flex;
   flex-direction: row;
@@ -83,7 +82,6 @@ body {
   color: #ffffff;
 }
 
-/* Controlled Headshot */
 .headshot-wrapper {
   flex: 0.8;
   max-width: 260px;
@@ -99,7 +97,6 @@ body {
   display: block;
 }
 
-/* Editorial Story Section */
 .about-story-section {
   margin-bottom: 5rem;
 }
@@ -111,7 +108,6 @@ body {
   gap: 3.5rem;
 }
 
-/* Reverses the row direction for the alternating layout */
 .about-story-grid.reversed {
   flex-direction: row-reverse;
 }
@@ -131,7 +127,6 @@ body {
   color: #ffffff;
 }
 
-/* Clean Lifestyle Image Card */
 .about-image-card-clean {
   flex: 0.9;
   background: #13161c;
@@ -152,7 +147,6 @@ body {
   object-fit: cover;
 }
 
-/* Experience Highlights */
 .experience-highlights {
   border-top: 1px solid #232733;
   padding-top: 4rem;
@@ -189,6 +183,20 @@ body {
   font-size: 0.9rem;
   color: #94a3b8;
   margin: 0;
+}
+
+/* Contact Page Scoped Styles */
+.contact-container,
+.contact-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
 /* Footer */
@@ -233,8 +241,10 @@ body {
   .about-hero-balanced,
   .about-story-grid,
   .about-story-grid.reversed,
-  .highlights-grid {
+  .highlights-grid,
+  .contact-grid {
     flex-direction: column;
+    display: flex;
     gap: 2rem;
   }
   
