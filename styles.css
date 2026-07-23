@@ -92,7 +92,7 @@ body {
   }
 }
 
-/* About Page Styles */
+/* About Page Specific Layouts */
 .about-page-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -142,9 +142,14 @@ body {
 
 .about-story-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.3fr;
+  grid-template-columns: 1.3fr 0.9fr;
   gap: 3.5rem;
   align-items: center;
+}
+
+/* Reverses columns for zig-zag effect */
+.about-story-grid.reversed {
+  grid-template-columns: 0.9fr 1.3fr;
 }
 
 .about-text-content p {
@@ -212,10 +217,9 @@ body {
   margin: 0;
 }
 
-/* Contact Page Styles */
-.contact-container,
+/* Contact Page Scoped Styles */
 .contact-page-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -267,9 +271,14 @@ body {
 @media (max-width: 768px) {
   .about-hero-balanced,
   .about-story-grid,
+  .about-story-grid.reversed,
   .highlights-grid,
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .headshot-wrapper {
+    max-width: 220px;
   }
 }
